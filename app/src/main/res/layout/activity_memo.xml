@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frame">
+        <Button android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="뒤로 가기"
+            android:textSize="15dp"
+            android:layout_marginStart="2dp"
+            android:layout_gravity="start"
+            android:layout_weight="0.1"
+            android:id="@+id/backbtn"
+            android:background="@drawable/alpha"/>
+        <TextView android:text="기록 추가/수정" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1" />
+        <Button android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="저장"
+            android:textSize="15dp"
+            android:layout_gravity="end"
+            android:layout_weight="0.1"
+            android:id="@+id/savebtn"
+            android:background="@drawable/alpha"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFABC9"
+            android:padding="2dp">
+            <TextView android:text="◆ " android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="날짜"
+                android:gravity="center"
+                android:background="#EEEEEE"
+                android:textSize="25dp"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="◈"
+                    android:gravity="center"
+                    android:textColor="#FFABC9"
+                    android:textSize="25dp"/>
+                <DatePicker
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/memodatepicker"
+                    android:calendarViewShown="false"
+                    android:background="#EEEEEE"
+                    android:datePickerMode="spinner"
+                    android:spinnersShown="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="◈"
+                    android:gravity="center"
+                    android:textColor="#FFABC9"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFABC9"
+                android:paddingTop="2dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp">
+                <TextView android:text="◆ " android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="내용"
+                    android:background="#EEEEEE"
+                    android:gravity="center"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp"
+            android:background="#FFABC9">
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/dataTxt"
+                android:gravity="start"
+                android:background="#EEEEEE"
+                android:paddingStart="2dp"
+                android:scrollbars="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

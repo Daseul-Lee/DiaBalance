@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFABC9"
+    tools:context="com.insulin.diabalance.join1">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/frame"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="0dp">
+        <TextView android:text="회원가입" android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_weight="1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="이름"
+
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/idText"/>
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heightEdit"
+        android:layout_alignBottom="@+id/heightEdit"
+        android:layout_alignLeft="@+id/weightText"
+        android:layout_alignRight="@+id/idText"
+        android:text="키" />
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weightEdit"
+        android:layout_alignBottom="@+id/weightEdit"
+        android:layout_alignLeft="@+id/idText"
+        android:text="몸무게" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/idEdit"
+        android:layout_alignBottom="@+id/idEdit"
+        android:layout_alignLeft="@+id/byText"
+        android:layout_marginTop="70dp"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/kgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weightEdit"
+        android:layout_alignBottom="@+id/weightEdit"
+        android:layout_toRightOf="@+id/weightEdit"
+        android:text="(kg)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/cmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/heightEdit"
+        android:layout_alignBottom="@+id/heightEdit"
+        android:layout_alignLeft="@+id/kgText"
+        android:text="(cm)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <TextView
+        android:id="@+id/byText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_below="@+id/pwchkText"
+        android:layout_marginTop="28dp"
+        android:text="생년" />
+
+    <EditText
+        android:id="@+id/byEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weightEdit"
+        android:layout_alignBaseline="@+id/byText"
+        android:layout_alignBottom="@+id/byText"
+
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+
+
+        android:background="#FFFFFF"/>
+
+
+
+    <TextView
+        android:id="@+id/pwText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pwEdit"
+        android:layout_alignBottom="@+id/pwEdit"
+        android:layout_alignLeft="@+id/byText"
+
+        android:text="p/w" />
+
+    <EditText
+        android:id="@+id/pwEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEdit"
+        android:layout_alignLeft="@+id/weightEdit"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/weightText"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        android:maxLength="14" />
+
+        <TextView
+            android:id="@+id/pwchkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pwchkEdit"
+            android:layout_alignBottom="@+id/pwchkEdit"
+            android:layout_alignLeft="@+id/byText"
+            android:text="p/w 확인" />
+
+        <EditText
+            android:id="@+id/pwchkEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pwEdit"
+            android:layout_alignLeft="@+id/weightEdit"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/weightText"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:background="#FFFFFF"
+            android:maxLength="14" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameText"
+        android:layout_alignBottom="@+id/nameText"
+        android:layout_toRightOf="@+id/weightText"
+        android:layout_alignLeft="@+id/weightEdit"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/idEdit"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weightEdit"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/weightEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/weightText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/byEdit"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/heightEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightEdit"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/kgText"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5" >
+
+        <requestFocus />
+    </EditText>
+        <TextView
+            android:id="@+id/cnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cnEdit"
+            android:layout_alignBottom="@+id/cnEdit"
+            android:layout_alignLeft="@+id/byText"
+
+            android:text="Channel" />
+
+        <EditText
+            android:id="@+id/cnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heightEdit"
+            android:layout_alignLeft="@+id/weightEdit"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/weightText"
+            android:ems="10"
+            android:inputType="number"
+            android:background="#FFFFFF"
+            android:maxLength="14" />
+
+        <TextView
+            android:id="@+id/rAPIText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rAPIEdit"
+            android:layout_alignBottom="@+id/rAPIEdit"
+            android:layout_alignLeft="@+id/byText"
+
+            android:text="ReadAPI" />
+
+        <EditText
+            android:id="@+id/rAPIEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cnEdit"
+            android:layout_alignLeft="@+id/weightEdit"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@+id/weightText"
+            android:ems="10"
+            android:background="#FFFFFF"
+            android:maxLength="14" />
+
+    <Button
+        android:id="@+id/joinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weightEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:text="등록" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/joinbtn"
+        android:layout_alignBottom="@+id/joinbtn"
+        android:layout_alignRight="@+id/weightEdit"
+        android:text="돌아가기" />
+
+    </RelativeLayout>
+</RelativeLayout>

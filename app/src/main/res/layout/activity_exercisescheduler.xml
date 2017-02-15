@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frame">
+        <TextView android:text="운동 스케쥴러" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back"
+            android:id="@+id/LMbtn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016년 7월"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/YMtxt" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/next"
+            android:layout_gravity="center"
+            android:id="@+id/NMbtn" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView android:text="일" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView android:text="월" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView android:text="화" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView android:text="수" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView android:text="목" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView android:text="금" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView android:text="토" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day1">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day8">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/alpha"
+                android:gravity="center"
+                android:id="@+id/day15">
+            </Button>
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day22">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day29">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day36">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day2">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day9">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day16">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day23">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day30">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day37">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day3">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day10">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day17">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day24">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day31">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day38">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day4">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day11">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day18">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day25">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day32">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day39">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day5">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day12">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day19">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day26">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day33">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day40">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day6">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day13">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day20">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day27">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day34">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day41">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/o"
+                android:gravity="center"
+                android:id="@+id/day7">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day14">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day21">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day28">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day35">
+            </Button>
+            <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="1"
+                android:textSize="20dp"
+                android:background="@drawable/x"
+                android:gravity="center"
+                android:id="@+id/day42">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:text="오늘의 운동 추천" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:nestedScrollingEnabled="false" />
+    <TextView android:text=" 현재 측정 혈당이 310mg/dl이므로 " android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/bstxt"/>
+    <TextView android:text="운동을 중지해주시기 바랍니다.
+" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="0dp"
+        android:id="@+id/bstxt2"/>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frame">
+        <TextView android:text="운동하기" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <TextView android:text="오늘의 운동" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView android:text="준비 운동" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"/>
+            <TextView android:text="걷기" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"/>
+            <TextView android:text="근력 운동" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"/>
+            <TextView android:text="마무리 운동" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="시작"
+                android:textSize="30dp"
+                android:id="@+id/WarmingUpbtn"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="시작"
+                android:textSize="30dp"
+                android:id="@+id/Walkingbtn"
+                android:layout_marginTop="20dp"
+                android:enabled="false" />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="시작"
+                android:textSize="30dp"
+                android:id="@+id/ExerciseOfMusclebtn"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="시작"
+                android:textSize="30dp"
+                android:id="@+id/FinishingExercisebtn"
+                android:layout_marginTop="20dp"
+                android:enabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
