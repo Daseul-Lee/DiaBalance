@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frame">
+        <TextView android:text="레시피" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_margin="3dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp">
+        <TextView android:text="" android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:textSize="26dp"
+            android:background="@drawable/lsemo"
+            android:layout_marginEnd="2dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <TextView android:text="" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26dp"
+                android:id="@+id/recipeNametxt"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#FFABC9"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <TextView android:text="" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/calorietxt" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#FFABC9"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
+        <TextView android:text="" android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:textSize="26dp"
+            android:background="@drawable/rsemo"
+            android:layout_marginStart="2dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFABC9"
+                android:paddingTop="2dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp">
+                <TextView android:text="◆ " android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp" />
+                <TextView android:text="재료" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:background="#EEEEEE"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFABC9"
+                android:padding="2dp">
+                <TextView android:text="" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:id="@+id/ingredienttxt"
+                    android:background="#EEEEEE"
+                    android:padding="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFABC9"
+                android:paddingTop="2dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp">
+                <TextView android:text="◆ " android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"/>
+                <TextView android:text="만드는 법" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:background="#EEEEEE"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFABC9"
+                android:padding="2dp">
+                <TextView android:text="" android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:id="@+id/cooktxt"
+                    android:background="#EEEEEE"
+                    android:padding="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

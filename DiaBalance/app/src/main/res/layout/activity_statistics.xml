@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/frame">
+        <TextView android:text="혈당 통계" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#09000000">
+            <Spinner
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chartsp"
+                android:entries="@array/spinnerItems"
+                android:scrollbars="vertical"
+                android:gravity="center">
+            </Spinner>
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:background="#FFFFFF"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:gravity="end">
+            <ImageView android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/onm"
+                android:gravity="start"
+                android:layout_weight="0.1"
+                android:id="@+id/morningImage"/>
+            <ImageView android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/offl"
+                android:gravity="center"
+                android:layout_weight="0.1"
+                android:id="@+id/lunchImage"/>
+            <ImageView android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/offe"
+                android:gravity="center"
+                android:layout_weight="0.1"
+                android:id="@+id/eveningImage"/>
+            <ImageView android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/offz"
+                android:gravity="end"
+                android:layout_weight="0.1"
+                android:id="@+id/zzzImage"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
